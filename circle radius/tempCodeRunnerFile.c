@@ -1,0 +1,2 @@
+
+        lcm= mul/(gcd*x);
