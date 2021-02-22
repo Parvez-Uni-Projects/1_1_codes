@@ -15,10 +15,10 @@ int main(){
     printf("Plese Enter the value of n and x ");
     scanf("%d %d",&n,&x);
     printf("1+");
-    for(int k=2;k<=n;k+=2){
+    for(int k=2;k<=n;k+=2)
+    {
         sum+=((pow(x,k))/fact(k));
         printf("(%d)%d^%d/%d!\t",sign,x,k,k);  
     }
     printf("\t %.2f",sum);
-
 }
