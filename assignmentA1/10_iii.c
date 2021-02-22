@@ -14,13 +14,14 @@ int main(){
     int sign=1;
     printf("Plese Enter the value of n and x ");
     scanf("%d%d",&n,&x);
-    printf("x+");
-    for(int k=3;k<=n;k+=2)
+   // printf("x+");
+    for(int k=1;k<=n;k+=2)
     {   
-        sign*=-1;
         sum+=sign*((pow(x,k))/fact(k));
         printf("(%d)%d^%d/%d!\t",sign,x,k,k);  
+        sign*=-1;
     }
-    printf("\t %.2f",(sum+x));
 
+    printf("\t %.2f",sum);
 }
+x=3, 1* 3^1/1! 

@@ -23,3 +23,5 @@ int main(){
     printf("\t %.2f",sum);
 
 }
+
+

@@ -16,9 +16,9 @@ int main(){
     printf("1+\t");
     for(int k=2;k<=n;k+=2)
     {   
-        sum+=((pow(x,k))/fact((k/2)));
-        printf("%d^%d/%d!\t",x,k,(k/2));  
+        sum+=((pow(x,2*k))/fact((k)));
+        printf("%d^%d/%d!\t",x,2*k,k);  
     }
     printf("\t %.2f",sum);
-
 }
+
