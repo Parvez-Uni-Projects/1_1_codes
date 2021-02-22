@@ -49,7 +49,8 @@ void division()
         int a,b;
         printf("Enter a and b: ");
         scanf("%d%d",&a,&b);
-        printf("Result= %d",a/b);
+       // float div=a/b;
+        printf("Result= %.2f",(float)a/b);
     }
 void multiplication()
     {
