@@ -1,6 +1,5 @@
-**
- * C program to whether a number is prime number or not
- */
+// C program to whether a number is prime number or not
+ 
 
 #include <stdio.h>
 

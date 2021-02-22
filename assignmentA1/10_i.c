@@ -1,5 +1,5 @@
 // 1 + x2/2! + x4/4! + x6/6! + .......xn/n!
-
+#include<stdio.h>
 #include<math.h>
 int fact(int x){
     int f=1;
