@@ -5,7 +5,6 @@ void substraction();
 void division();
 void multiplication ();
 
-
 void main ()
 {
     int ch ;
@@ -30,7 +29,6 @@ void main ()
         break;
     }   
 }
-
 void addition()
     {
         int a,b;

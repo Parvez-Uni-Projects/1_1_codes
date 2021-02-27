@@ -3,7 +3,7 @@
 #include<math.h>
 int main()
 {
-     int i,n,sum_odd=0,term,r=0;
+     int i,n,sum_odd=0,r=0;
 
     printf("Enter a number: ");
     scanf("%d",&n);

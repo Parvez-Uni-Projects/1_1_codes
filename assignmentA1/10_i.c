@@ -10,10 +10,10 @@ int fact(int x){
     return f;
 }
 int main(){
-    int n,x;
+    int n,x,sign;
     float sum=1;
-    printf("Plese Enter the value of n and x ");
-    scanf("%d %d",&n,&x);
+    printf("Plese Enter the value of x and n ");
+    scanf("%d %d",&x,&n);
     printf("1+");
     for(int k=2;k<=n;k+=2)
     {

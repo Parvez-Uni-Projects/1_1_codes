@@ -24,4 +24,3 @@ int main(){
 
     printf("\t %.2f",sum);
 }
-x=3, 1* 3^1/1! 
