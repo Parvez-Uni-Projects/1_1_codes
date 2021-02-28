@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "ABAB.C": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
 }
