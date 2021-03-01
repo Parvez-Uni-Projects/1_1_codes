@@ -59,6 +59,7 @@ int main ()
     printf("%d is an strong number \n",num3);
     else
     printf("%d is not an strong number \n",num3);
+    asfdasdasd
 }
 
 int fact(int x)
