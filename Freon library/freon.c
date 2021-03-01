@@ -13,6 +13,7 @@ int isPower(int,int);      // function for finding the power of a number
 int isPerfect(int);         //function for finding the perfect number
 int isArmstrong(int);       //function for finding the armstrong number
 int isStrong(int);          //function for finding the strong number
+float isTriArea(int,int,int);
 int main ()
 {
     int num1,num2,num3;
@@ -65,13 +66,13 @@ int main ()
         printf("%dP%d is %d\n ",num2,num1,isNpr(num2,num1));
         printf("%dC%d is %d\n ",num2,num1,isNcr(num2,num1));
     }
-    
     else
     {
         printf("%dP%d is %d \n ",num1,num2,isNpr(num1,num2));
-        printf("%dC%d is %d \n ",num1,num2,isNcr(num1,num2));
-        
+        printf("%dC%d is %d \n ",num1,num2,isNcr(num1,num2));  
     }
+    if( ((num1+num2)>num3) || ((num1+num3)>num2) || ((num2+num3)>num1) )
+        printf("If three sides are %d %d %d the area of the triangle is %.2f",num1,num2,num3, (float)isTriArea(num1,num2,num3));
 
 }
 //factorial function building
@@ -201,4 +202,14 @@ int isStrong(int x)
     return 1;
     else 
     return 0;
+}
+//the area of the triangle if three sides are given 
+float isTriArea(int x,int y,int z)
+{
+    float s,s2;
+    s= (x+y+z)/2;
+    s2=(s*(s-x)*(s-y)*(s-z));
+    
+    
+
 }
