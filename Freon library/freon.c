@@ -1,14 +1,14 @@
 #include <stdio.h>
-//int bSort(); //function using bubble sort algorithm
-//int sSort(); //function using selection sort algorithm
-//int search(); //function for seaching a specific  number in a array 
-int fact(int); //function for finding the factorial of a number
-//int nCr(int,int); // function for finding the value of nCr 
-//int nPr(int,int); // function for finding the value of nPr 
-int isPrime(int); //function for checking if a number is prime or not
-int isEven(int);    //function for checking if a number is even or not
-int isOdd(int);     //function for checking if a number is odd or not
-int isCapital(char);    //function for checking if a character is capital or not 
+//int bSort();                      //function using bubble sort algorithm
+//int sSort();                      //function using selection sort algorithm
+//int search();                  //function for seaching a specific  number in a array 
+int fact(int);                  //function for finding the factorial of a number
+int isNpr(int,int);          // function for finding the value of nPr 
+int isNcr(int,int);             // function for finding the value of nCr 
+int isPrime(int);           //function for checking if a number is prime or not
+int isEven(int);          //function for checking if a number is even or not
+int isOdd(int);                //function for checking if a number is odd or not
+int isCapital(char);         //function for checking if a character is capital or not 
 int isPower(int,int);      // function for finding the power of a number
 int isPerfect(int);         //function for finding the perfect number
 int isArmstrong(int);       //function for finding the armstrong number
@@ -60,14 +60,41 @@ int main ()
     else
     printf("%d is not an strong number \n",num3);
 
-}
+    if (num2>num1)
+    {
+        printf("%dP%d is %d\n ",num2,num1,isNpr(num2,num1));
+        printf("%dC%d is %d\n ",num2,num1,isNcr(num2,num1));
+    }
+    
+    else
+    {
+        printf("%dP%d is %d \n ",num1,num2,isNpr(num1,num2));
+        printf("%dC%d is %d \n ",num1,num2,isNcr(num1,num2));
+        
+    }
 
+}
+//factorial function building
 int fact(int x)
 {
     int fac=1,i;
     for(i=1;i<=x;i++)
         fac*=i;
     return fac;
+}
+//nPr function building
+int isNpr(int x,int y)
+{   
+    int nPr;
+    nPr=((fact(x))/(fact(x-y)));
+    return nPr;
+}
+//building the ncr function
+int isNcr(int x,int y)
+{
+    int nCr;
+    nCr= isNpr(x,y)/fact(y);
+    return nCr;
 }
 //prime function building
 int isPrime(int x)
