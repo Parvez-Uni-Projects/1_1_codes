@@ -10,15 +10,15 @@ int fact(int x){
     return f;
 }
 int main(){
-    int n,x,sign;
-    float sum=1;
-    printf("Plese Enter the value of x and n ");
+    int n,x,sign,k;
+    float sum=0;
+    printf("Please Enter the value of x and n ");
     scanf("%d %d",&x,&n);
-    printf("1+");
-    for(int k=2;k<=n;k+=2)
+    //printf("1+");
+    for(k=1;k<=n;k+=2)
     {
         sum+=((pow(x,k))/fact(k)); 
-        printf("(%d)%d^%d/%d!\t",sign,x,k,k);  
+       // printf("(%d)%d^%d/%d!\t",sign,x,k,k);  
     }
     printf("\t %.2f",sum);
 }

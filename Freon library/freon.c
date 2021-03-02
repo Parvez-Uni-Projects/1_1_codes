@@ -13,7 +13,8 @@ int isPower(int,int);      // function for finding the power of a number
 int isPerfect(int);         //function for finding the perfect number
 int isArmstrong(int);       //function for finding the armstrong number
 int isStrong(int);          //function for finding the strong number
-float isTriArea(int,int,int);
+float isTriArea(int,int,int); //function for finding the area if all sides are given 
+float isSqrt(int);
 int main ()
 {
     int num1,num2,num3;
@@ -206,10 +207,15 @@ int isStrong(int x)
 //the area of the triangle if three sides are given 
 float isTriArea(int x,int y,int z)
 {
-    float s,s2;
+    float s,s2,area;
     s= (x+y+z)/2;
     s2=(s*(s-x)*(s-y)*(s-z));
-    
-    
+
+    return area;
+}
+
+float isSqrt(int x)
+{
+
 
 }
