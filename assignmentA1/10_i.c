@@ -18,7 +18,7 @@ int main(){
     for(k=1;k<=n;k+=2)
     {
         sum+=((pow(x,k))/fact(k)); 
-       // printf("(%d)%d^%d/%d!\t",sign,x,k,k);  
+       //printf("(%d)%d^%d/%d!\t",sign,x,k,k);  
     }
     printf("\t %.2f",sum);
 }

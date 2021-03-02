@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<math.h>
 
-float fact(int n);
-float power(int x,int num);
+int fact(int n);
+int power(int x,int num);
 int main()
 {
     int i,n,x;
@@ -18,8 +18,7 @@ int main()
    for(i=1;i<=n;i+=2)
     {
         sum+=((power(x,i))/fact(i));
-
-       // printf("%d^%d/%d! %d \t",x,i,i,sum);
+       //printf("%d^%d/%d! %d \t",x,i,i,sum);
     } 
 
 
@@ -29,7 +28,7 @@ int main()
    printf("Sum:%.2f",sum);
 
 }
-float power(int x,int num)
+int power(int x,int num)
 {
     int i;
     float pow=1;
@@ -41,7 +40,7 @@ float power(int x,int num)
     }
    return pow;
 }
-float fact(int n)
+int fact(int n)
 {
     int i;
     float fac=1;

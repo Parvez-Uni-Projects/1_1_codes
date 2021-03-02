@@ -4,23 +4,23 @@
  int prime();
  int main ()
  {
-     int ll,ul,temp,isprime;
+     int ll,ul,isprime;
 
-     printf("Enter the lower limit and upper limit: ");
+     printf("Enter the lower limit and upper limit: "); //
      scanf("%d %d",&ll,&ul);
 
      for(ll;ll<=ul;ll++)
      {
-         isprime=prime(ll);
+         //isprime=prime(ll);  //1/0  ll= lower limit   3 
 
-         if(isprime==1)
+         if(prime(ll))
             printf("%d\t",ll);
      }
  }
 
- int prime (int x)
+ int prime (int x) 
  {
-    int i=2,isPrime=1,temp1;
+    int i=2,isPrime=1;
 
     while(i<=x/2)
     {
@@ -31,9 +31,9 @@
         }
         i++;
     }
+
     if(isPrime == 1 && x > 1)
-        temp1=1;
+       return 1;
     else
-        temp1=2;
-    return temp1;
+       return 0; 
  }
