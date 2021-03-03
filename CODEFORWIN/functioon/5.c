@@ -78,7 +78,7 @@ int armstrong (int x)
     temp2=2;
     return temp2;
 }
-int perfect (int x)
+int perfect (int x) 6=1+2+3
 {
     int temp3,i,sum=0;
     for(i=1;i<x;i++)
@@ -87,9 +87,9 @@ int perfect (int x)
             sum+=i;
     }
     if(sum==x)
-        temp3=1;
+        return 1;
     else
-        temp3=2;
+        return 0;
     return temp3;
 }
 

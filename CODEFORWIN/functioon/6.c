@@ -1,24 +1,22 @@
 //Write a function in C programming to find prime numbers using function. How to find all prime numbers between two intervals using functions. Display all prime numbers between a given range using function in C programming.
 
 #include <stdio.h>
- int prime();
- int main ()
+int prime();
+int main ()
  {
      int ll,ul,isprime;
 
-     printf("Enter the lower limit and upper limit: "); //
+     printf("Enter the lower limit and upper limit: ");
      scanf("%d %d",&ll,&ul);
-
+    
      for(ll;ll<=ul;ll++)
      {
-         //isprime=prime(ll);  //1/0  ll= lower limit   3 
-
          if(prime(ll))
             printf("%d\t",ll);
      }
  }
 
- int prime (int x) 
+int prime (int x) 
  {
     int i=2,isPrime=1;
 
