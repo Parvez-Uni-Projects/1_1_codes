@@ -1,7 +1,11 @@
 {
     "files.associations": {
         "ABAB.C": "cpp",
-        "SABBIRPROB.C": "cpp"
+        "SABBIRPROB.C": "cpp",
+        "200104129_01.C": "cpp",
+        "200104129_02.C": "cpp",
+        "200104129_03.C": "cpp",
+        "200104129_05.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }

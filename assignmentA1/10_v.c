@@ -1,7 +1,8 @@
 // 1 + x2/2! + x4/4! + x6/6! + .......xn/n!
 #include<stdio.h>
 #include<math.h>
-int fact(int x){
+int fact(int x)
+{
     int f=1;
     for(int j=1;j<=x;j++){
         f*=j;

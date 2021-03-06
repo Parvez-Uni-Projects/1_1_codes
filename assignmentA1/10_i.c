@@ -14,11 +14,11 @@ int main(){
     float sum=0;
     printf("Please Enter the value of x and n ");
     scanf("%d %d",&x,&n);
-    //printf("1+");
+    printf("1+");
     for(k=1;k<=n;k+=2)
     {
         sum+=((pow(x,k))/fact(k)); 
-       //printf("(%d)%d^%d/%d!\t",sign,x,k,k);  
+       printf("(%d)%d^%d/%d!\t",sign,x,k,k);  
     }
     printf("\t %.2f",sum);
 }
