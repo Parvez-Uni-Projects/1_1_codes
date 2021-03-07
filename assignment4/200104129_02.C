@@ -5,23 +5,23 @@ void prime(int x);
 int main()
 {
     int num;
-    printf("Enter an integer: ");
+    printf("Enter an integer: "); //taking teh input form the user
     scanf("%d", &num);
-    prime(num);
+    prime(num); //sending teh argument to the function
 
     return 0;
 }
 
-void prime(int x)
+void prime(int x) //creating a function to find out the prime factors
 {
     int i;
-    for(i=2;i<=x;i++)
+    for(i=2;i<=x;i++) //starting the loop by 2 as it is the lowest prime number
     {
-        if(x%i==0)
+        if(x%i==0) //checking if its a a factor of the number
         {
-            printf("%d\t",i);
+            printf("%d\t",i); //printing the value of the factor
             x = x/i;
-            i--;
+            i--; //if it is a factor we are decreasing the value value of the factor oby one
         }
     }
 }

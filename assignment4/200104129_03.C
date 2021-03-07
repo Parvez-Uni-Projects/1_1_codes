@@ -3,22 +3,30 @@ given  the third term. Following are the
 first few terms of the Fibonacci sequence:  1 1 2 3 5 8 13 21 34 55.  */
 
 #include<stdio.h>
-int fibo(int n)
-{
-    if(n==1 || n==0)
-        return n;
-    else
-        return (fibo(n-1)+fibo(n-2));     n=3 fibo(2)
-}
+int isFibo(int);
+
 int main()
 {
-    int i,result,n;
-    printf("Enter the range : ");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    int i,n=25; //here n =25 as we are told to print the first 25 fibonacci number
+         //printf("Enter the range : ");
+        //scanf("%d",&n);
+    
+
+        printf("The fibonacci series is \n");
+        isFibo(n); //printing the fibonacci numbers
+    
+    return 0;
+}
+
+int isFibo(int n)
+{
+    int a=1,b=1,c,i=1;
+    for(;i<=n;i++) //the loop will run till n
     {
-       result=fibo(i);
-       printf("%d\t",result);
+        printf("%d\t", a); //printing the series
+        c=a+b; 
+        a=b;
+        b=c;
     }
     return 0;
 }
