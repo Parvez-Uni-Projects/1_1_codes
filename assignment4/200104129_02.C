@@ -7,7 +7,7 @@ int main()
     int num;
     printf("Enter an integer: "); //taking teh input form the user
     scanf("%d", &num);
-    prime(num); //sending teh argument to the function
+    prime(num); //sending the argument to the function
 
     return 0;
 }
@@ -21,7 +21,7 @@ void prime(int x) //creating a function to find out the prime factors
         {
             printf("%d\t",i); //printing the value of the factor
             x = x/i;
-            i--; //if it is a factor we are decreasing the value value of the factor oby one
+            i--; //if it is a factor we are decreasing the value value of the factor by one
         }
     }
 }
