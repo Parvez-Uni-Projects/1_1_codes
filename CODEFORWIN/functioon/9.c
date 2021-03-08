@@ -9,16 +9,16 @@ int main ()
     printf("Enter the upper and lower limit "); 
     scanf("%d%d",&ll,&ul); 
     for(ll;ll<=ul;ll++)
-     /*{
+     {
          if(perfect(ll))
             printf("%d\t",ll);
-     }*/
+     }
 
-    for(ll;ll<=ul;ll++)
+    /*for(ll;ll<=ul;ll++)
      {
          if(iseven(ll))
             printf("%d\t",ll);
-     }
+     }*/
 }
 
 int perfect (int x)
