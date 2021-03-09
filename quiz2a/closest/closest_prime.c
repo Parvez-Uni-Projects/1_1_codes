@@ -2,16 +2,22 @@
 int prime();
 int minPrime(int);
 int maxPrime(int);
-int closest(int);
 int main ()
  {
-     int num;
+     int ll,isprime,max,min;
      printf("Enter an integer number : ");
-     scanf("%d",&num);
-    if (prime(num)==num)
-        printf("%d is a prime number",num);
-    else 
-            printf("The closest prime number is %d", closest(num));
+     scanf("%d",&ll);
+    if (prime(ll)==ll)
+        printf("%d is a prime number",ll);
+    else
+    {   
+        int minprime=minPrime(ll); 
+        int maxprime=maxPrime(ll);
+        if ((ll-minprime)>(maxprime-ll))  
+            printf("The closest prime number is %d",maxprime);
+        else
+            printf("The closest prime number is %d",minprime);
+    }
  }
 int prime (int x) 
  {
@@ -51,12 +57,5 @@ int maxPrime(int ll)
             break;  
          }        
      }
-}
-int closest(int num)
-{   
-    if((num-minPrime(num))>(maxPrime(num)-num))
-            return maxPrime(num);
-    else
-            return minPrime(num);
 }
 

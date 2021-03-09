@@ -3,16 +3,22 @@ int strong(int);
 int minStrong(int);
 int maxStrong(int);
 int fact(int);
-int closest(int);
 int main()
 {
     int num;
-    printf("Enter an integer value ");
+    printf("Enter an integer value");
     scanf("%d",&num);
     if (strong(num)==num)
         printf("%d is a armstrong number",num);
     else
-        printf("%d is closest armstrong number",closest(num));   
+    {   
+        int minstrong=minStrong(num);
+        int maxstrong=maxStrong(num);
+        if((num-minstrong)>(maxstrong-num))
+            printf("The closest armstrong number is %d",maxstrong);
+        else
+            printf("The closest armstrong number is %d",minstrong);
+    }   
 }
 int strong(int x)
 {
@@ -29,6 +35,7 @@ int strong(int x)
     else 
         return 0;
 }
+
 int fact(int x)
 {
     int f=1,j;
@@ -38,6 +45,7 @@ int fact(int x)
     }
     return f;
 }
+
 int maxStrong(int num)
 {
     for(  ;num>=1 ;num++)
@@ -59,11 +67,4 @@ int minStrong(int num)
             break;  
          }        
      }
-}
-int closest(int num)
-{   
-    if((num-minStrong(num))>(maxStrong(num)-num))
-            return maxStrong(num);
-    else
-            return minStrong(num);
 }

@@ -3,7 +3,6 @@ int armstrong(int);
 int power1(int ,int);
 int minarmStrong(int);
 int maxarmStrong(int);
-int closest(int);
 int main()
 {
     int num;
@@ -11,8 +10,15 @@ int main()
     scanf("%d",&num);
     if (armstrong(num)==num)
         printf("%d is a armstrong number",num);
-    else  
-            printf("The closest armstrong number is %d",closest(num));
+    else
+    {   
+        int minarmstrong=minarmStrong(num);
+        int maxarmstrong=maxarmStrong(num);
+        if((num-minarmstrong)>(maxarmstrong-num))
+            printf("The closest armstrong number is %d",maxarmstrong);
+        else
+            printf("The closest armstrong number is %d",minarmstrong);
+    }   
 }
 int armstrong (int x)
 {
@@ -62,11 +68,4 @@ int minarmStrong(int num)
             break;  
          }        
      }
-}
-int closest(int num)
-{   
-    if((num-minarmStrong(num))>(maxarmStrong(num)-num))
-            return maxarmStrong(num);
-    else
-            return minarmStrong(num);
 }

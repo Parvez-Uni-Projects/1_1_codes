@@ -2,16 +2,22 @@
 int perfect(int);
 int minPerfect(int);
 int maxPerfect(int);
-int closest(int);
 int main()
 {
     int num;
     printf("Enter an integer value ");
     scanf("%d",&num);
     if (perfect(num)==num)
-        printf("%d is armstrong",num);
-    else  
-            printf("closest armstrong %d",closest(num)); 
+        printf("%d is a armstrong number",num);
+    else
+    {   
+        int minperfect=minPerfect(num);
+        int maxperfect=maxPerfect(num);
+        if((num-minperfect)>(maxperfect-num))
+            printf("The closest armstrong number is %d",maxperfect);
+        else
+            printf("The closest armstrong number is %d",minperfect);
+    }   
 }
 int perfect (int x)
 {
@@ -47,11 +53,4 @@ int minPerfect(int num)
             break;  
          }        
      }
-}
-int closest(int num)
-{   
-    if((num-minPerfect(num))>(maxPerfect(num)-num))
-            return maxPerfect(num);
-    else
-            return minPerfect(num);
 }
