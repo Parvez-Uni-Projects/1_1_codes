@@ -8,16 +8,12 @@ int main ()
     int range;
     printf("Enter the range ");
     scanf("%d",&range);
-
     printf("The sum is %d",sumNature(range));
 }
-
 int sumNature(int n)
-{   
-    int sum=0;
-    for(int i=1;i<=n;i++)
-    {
-        sum+=i;
-    }
-     return sum;
+{
+    if (n==1)
+        return 1;
+    else
+        return n+sumNature(n-1);
 }

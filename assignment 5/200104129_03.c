@@ -12,12 +12,11 @@ int main ()
     printf("There are %d digits in %d",count(num),num);
 }
 
-int count(int num)
-{
-    int i,digit;
-    for (i=0;0<num;i++)
-    {
-        num/=10;
-    }
-    return i;
+int count(int n)
+{   
+   
+    if (n==0)
+        return 0;
+    else 
+        return 1 + count(n/10);
 }

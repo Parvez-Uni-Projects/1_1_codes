@@ -12,6 +12,14 @@ int main ()
     printf("The reverse of %d is %d %d",num,reverse(num));
 }
 
+int reverse(int n)
+{
+    if (n==0)
+        return n
+    else
+        return (n%10)*10
+}
+/*
 int reverse(int num)
 {
     int i,digit,input,sum=0;
@@ -40,3 +48,4 @@ int isPow(int x,int y)
     }
     return pow;
 }
+*/
