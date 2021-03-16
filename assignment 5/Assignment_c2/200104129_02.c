@@ -13,7 +13,6 @@ int main()
     printf("The reverse number is %d",reverse(num)); //getting the reverse value from the reverse function 
 
 }
-
 int reverse(int num) //creating the reverse function
 {
     if (num==0)
@@ -34,4 +33,3 @@ int count(int num)  //creating the count function for suporting our reverse func
     else
         return 1+ count(num/10);  //base condition
 }
-
