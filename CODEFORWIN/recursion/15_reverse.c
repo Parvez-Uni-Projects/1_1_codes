@@ -10,10 +10,8 @@ int main()
     printf("Enter the number "); //taking the inputs from teh users
     scanf("%d",&num);
 
-    if (reverse(num)==num)
-        printf("%d is palindrome ",num); //getting the reverse value from the reverse function 
-    else 
-         printf("%d is not palindrome ",num); //getting the reverse value from the reverse function
+    printf("The reverse number is %d",reverse(num)); //getting the reverse value from the reverse function 
+
 }
 int reverse(int num) //creating the reverse function
 {

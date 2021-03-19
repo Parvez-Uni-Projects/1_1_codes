@@ -1,5 +1,5 @@
 #include<stdio.h>
-void natural(int,int);
+int natural(int,int);
 int main()
 {
     int ll,ul;
@@ -9,11 +9,11 @@ int main()
     
     natural(ll,ul);
 }
-void natural(int ll,int ul)
-{
+int natural(int ll,int ul)
+{   
+    int i;
     if(ll>ul)
-        return;
-    printf("%d\t",ll);
-    
+        return 0;
+    printf("%d\t he\t",ll);
     natural(ll+1,ul);
 }

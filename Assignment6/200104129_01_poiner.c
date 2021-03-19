@@ -1,0 +1,1 @@
+// Write a program to calculate sum and average using call by reference
