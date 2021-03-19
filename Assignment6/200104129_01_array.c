@@ -13,8 +13,5 @@ int main()
         scanf("%d",&array[i]);
     for (i=0;i<size;i++)
         sum+=array[i];
-    
     printf("%d is the sum of the elements",sum);
-
-    
 }
