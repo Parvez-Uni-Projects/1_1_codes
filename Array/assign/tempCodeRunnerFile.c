@@ -1,0 +1,2 @@
+
+            if (array[i]==del)
