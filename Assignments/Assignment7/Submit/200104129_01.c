@@ -20,7 +20,7 @@ int main ()
             if(a[i]==num1)
                 index=i;
         }
-    for(i=index;i<4;i++)
+    for(i=index;i<size;i++)
     {
         a[i]=a[i+1];
         //a[i-1]=a[i];
