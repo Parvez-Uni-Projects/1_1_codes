@@ -1,9 +1,9 @@
-//Write a C program to print all unique elements in the array.
+//Write a C program to print all duplicate in the array.
 
 #include <stdio.h>
 int main ()
 {
-    int i,j,size,count;
+    int i,j,size,count,dupli=0;
 
     printf("Enter the size of the array ");
     scanf("%d",&size);
@@ -25,24 +25,23 @@ int main ()
             {
                 count++;
                 freq[j]=0;
+                dupli++;
             }
         }
-
-
         if(freq[i]!=0)
             freq[i]=count;
     }
 
 
-    /*
     for(i=0;i<size;i++)
         {
-            if(freq[i]==1)
+            if(freq[i]>=2)
                 printf("%d\t",arr[i]);
+                
         }
-    */
-   for(i=0;i<size;i++)
-                printf("%d\t",freq[i]);
 
+    if(dupli==0)
+        printf("No duplicate value ");
+   
 }
 

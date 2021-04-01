@@ -3,14 +3,21 @@
 #include<stdio.h>
 int main ()
 {
-    int array[20],odd[20],even[20],i,size,size2,size3,j=0,k=0;
+    int i,size,j=0,k=0;
 
     printf("Enter the size of the array ");
     scanf("%d",&size);
 
+    int array[size],odd[size],even[size];
+
     printf("Enter the array ");
     for(i=0;i<size;i++)
-        scanf("%d",&array[i]);
+        {
+            scanf("%d",&array[i]);
+            even[i] = -1;
+            odd[i]  = -1;
+        }
+        
 
     for (i=0;i<size;i++)
         {
@@ -18,22 +25,29 @@ int main ()
             {   
                  even[j]=array[i];
                  j++;
-                 size2=j;
             }
-            else
+            else if(array[i]%2==1)
             {   
                  odd[k]=array[i];
                  k++;
-                 size3=k;
             }      
         }
-    for(j=0;j<size2 ;j++)     
-        printf("%d\t",even[j]);
 
-    printf("\n");
-    
-    for(k=0;k<size3 ;k++)
-        printf("%d\t",odd[k]);
+    printf("Even elements are ");
+    for(i=0;i<j ;i++) 
+    {
+        if(even[i]!=-1)
+            printf("%d\t",even[i]);
+    }    
+
+    printf("\n");  
+    printf("Odd elements are ");  
+    for(i=0;i<k ;i++)
+    {
+        if(odd[i]!=-1)
+            printf("%d\t",odd[i]);
+    }
+        
     
     return 0;
 }
