@@ -6,7 +6,9 @@
         "200104129_02.C": "cpp",
         "200104129_03.C": "cpp",
         "200104129_05.C": "cpp",
-        "16.C": "cpp"
+        "16.C": "cpp",
+        "limits": "c",
+        "utility": "c"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
