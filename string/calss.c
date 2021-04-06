@@ -11,19 +11,21 @@ void main()
     for(i=0;a[i]!='\0';i++)
         length++;
 
-        for(i=0;a[i]!="\0";i++) //string rev 
+        for(i=0;a[i]!='\0';i++) //string rev 
             {
                 b[i]=a[length-1-i];
             }
 
+            b[length]='\0';
+/*
             for(i=0;a[i]!="\0";i++) //string cpy
             {
                 c[i]=a[i];
             }
 
-
-    strcpy(b,a);
-    strrev(b);
+*/
+    //strcpy(b,a);
+    //strrev(b);
 
     printf("String length is %d\n",length);
     puts(a);
