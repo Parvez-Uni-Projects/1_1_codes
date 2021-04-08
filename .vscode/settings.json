@@ -8,7 +8,8 @@
         "200104129_05.C": "cpp",
         "16.C": "cpp",
         "limits": "c",
-        "utility": "c"
+        "utility": "c",
+        "1060.C": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Enabled"
+    "C_Cpp.errorSquiggles": "Disabled"
 }
