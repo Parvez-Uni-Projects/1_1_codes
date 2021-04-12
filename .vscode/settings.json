@@ -9,7 +9,8 @@
         "16.C": "cpp",
         "limits": "c",
         "utility": "c",
-        "1060.C": "cpp"
+        "1060.C": "cpp",
+        "1075.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

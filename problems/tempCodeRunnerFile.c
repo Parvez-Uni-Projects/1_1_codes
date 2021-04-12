@@ -1,1 +1,0 @@
-float fact(int n)
