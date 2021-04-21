@@ -15,7 +15,7 @@ int main()
 }
 int gcd(int num1,int num2,int mul)
 {
-    if (mul%num1==0 && mul%num2==0)
+    if (mul%num1==0 && mul%num2==0) 
         return mul;
     else
         return gcd(num1,num2,mul+1); //as div is not the divisor then it will go down by 1 
