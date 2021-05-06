@@ -13,7 +13,7 @@ int main ()
             scanf("%d",&a[i][j]);
     }
 
-   
+
 
     for(i=0;i<3;i++)
     {   
@@ -21,11 +21,7 @@ int main ()
         {
             if(i+j==((3+1)-2))
                 sum+=a[i][j];  
-        }
-              
+        }       
     }
-
     printf("The sum of minordiagonal elements of matrix is %d ",sum);
-
-   
 }

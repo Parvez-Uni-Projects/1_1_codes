@@ -1,8 +1,9 @@
 #include <stdio.h>
-
 int main ()
 {
     int a[10][10],b[10][10],c[10][10],i,j,k,sum;
+
+    2*3 2*3
 
     printf("Enter the first matrix \n");
     for(i=0;i<3;i++)
@@ -25,8 +26,8 @@ int main ()
             sum=0;
                 for(k=0;k<3;k++)
                     sum+= a[i][k] * b[k][j];
-            c[i][j]=sum;
-        }    
+                        c[i][j]=sum;
+        }
     }
 
     printf("The multiplied matrix is  matrix \n");
