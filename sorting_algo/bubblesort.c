@@ -15,7 +15,7 @@ int main()
        for(j=i+1;j<size;j++)
        {
           if(a[i]>a[j] && a[j<0])
-           {
+            {
                temp=a[j];
                a[j]=a[i];
                a[i]=temp;

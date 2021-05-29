@@ -1,21 +1,21 @@
 #include <stdio.h>
-//int bSort();                      //function using bubble sort algorithm
-//int sSort();                      //function using selection sort algorithm
-//int search();                  //function for seaching a specific  number in a array 
+//int bSort();                  //function using bubble sort algorithm
+//int sSort();                  //function using selection sort algorithm
+//int search();                 //function for seaching a specific  number in a array 
 int fact(int);                  //function for finding the factorial of a number
-int isNpr(int,int);          // function for finding the value of nPr 
+int isNpr(int,int);             // function for finding the value of nPr 
 int isNcr(int,int);             // function for finding the value of nCr 
-int isPrime(int);           //function for checking if a number is prime or not
-int isEven(int);          //function for checking if a number is even or not
-int isOdd(int);                //function for checking if a number is odd or not
-int isCapital(char);         //function for checking if a character is capital or not 
-int isPower(int,int);      // function for finding the power of a number
-int isPerfect(int);         //function for finding the perfect number
-int isArmstrong(int);       //function for finding the armstrong number
-int isStrong(int);          //function for finding the strong number
-float isTriArea(int,int,int); //function for finding the area if all sides are given 
+int isPrime(int);               //function for checking if a number is prime or not
+int isEven(int);                //function for checking if a number is even or not
+int isOdd(int);                 //function for checking if a number is odd or not
+int isCapital(char);            //function for checking if a character is capital or not 
+int isPower(int,int);           //function for finding the power of a number
+int isPerfect(int);             //function for finding the perfect number
+int isArmstrong(int);           //function for finding the armstrong number
+int isStrong(int);              //function for finding the strong number
+float isTriArea(int,int,int);   //function for finding the area if all sides are given 
 float isSqrt(int);
-int main ()
+int main ()         
 {
     int num1,num2,num3;
     char ch;
