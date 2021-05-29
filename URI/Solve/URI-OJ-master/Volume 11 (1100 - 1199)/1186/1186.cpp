@@ -6,6 +6,7 @@ int main() {
     char T[2];
     int p = 11;
     scanf("%s", &T);
+    
     for (int x = 0; x <= 11; x++)
         for (int y = 0; y <= 11; y++)
             scanf("%lf", &M[x][y]);
