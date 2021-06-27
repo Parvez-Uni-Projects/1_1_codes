@@ -7,13 +7,13 @@ int main ()
     scanf("%d",&n);
 
     int A[n];
-    int freq[n];
+    int frequ[n];
 
     printf("Enter the element of the first array ");
     for(i=0;i<n;i++)
     {
         scanf("%d",&A[i]);
-        freq[n] =-1;
+        frequ[n] =-1;
     }
         
 
@@ -30,12 +30,12 @@ int main ()
     
         for (i=0;i<n+1;i++)
         {
-            freq[i]=-1;
+            frequ[i]=-1;
             for (j=0;j<m;j++)
             {
                 if (A[i]==B[j])
                 {
-                      freq[i]=0;
+                      frequ[i]=0;
                       sum++;
                       break; 
                 }
@@ -48,7 +48,7 @@ int main ()
         {
             for (i=0;i<n;i++)
             {
-                   if (freq[i]!=0)
+                   if (frequ[i]!=0)
                     printf("%d \t",A[i]);  
             }       
         }
