@@ -18,15 +18,9 @@ float grade_to_point(char *ptr)
 int main ()
 {
     char str1[9][4];
-
     float sum_cg=0;
-
-
         for (int i=0 ; i<9 ;i++)
             {
-                // printf("%d no  string ",i+1);
-                //   gets(str1[i]);
-
                     if (i < 5) 
                     {
                             printf("%d no 3.0 credit course grade ",i+1);
@@ -46,6 +40,5 @@ int main ()
                             sum_cg += .75* grade_to_point(str1[i]);  
                     }
             }
-    printf("Your CG is %.2f",sum_cg/20.25);
-               
+    printf("Your CG is %.2f",sum_cg/20.25);             
 }
