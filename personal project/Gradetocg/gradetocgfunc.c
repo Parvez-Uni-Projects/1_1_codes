@@ -3,7 +3,8 @@
 
 void pass(char *ptr)
 {
-    printf("\nThe string is :%2s",ptr);
+    //printf("\nThe string is :%2s",ptr);
+    puts(ptr);
 }
 
 
