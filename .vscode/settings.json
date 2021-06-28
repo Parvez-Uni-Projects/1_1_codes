@@ -15,5 +15,10 @@
         "1164.C": "cpp",
         "STRING.C": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "cSpell.words": [
+        "dili",
+        "eita",
+        "marum"
+    ]
 }
