@@ -16,16 +16,16 @@ int main ()
         //scanf("%[^\n]s", str[i]);
         //gets(str);
     }
-    for (i=0;i<size;i++)
-    {   
+    // for (i=0;i<size;i++)
+    // {   
         printf("%s\t",str[i]);
-        printf("%s\t",strlwr(str[i]));
-        printf("%s\t",strupr(str[i]));
-        printf("%s\t",strrev(str[i]));
-        printf("%d\n",strlen(str[i]));
+    //     printf("%s\t",strlwr(str[i]));
+    //     printf("%s\t",strupr(str[i]));
+    //     printf("%s\t",strrev(str[i]));
+    //     printf("%d\n",strlen(str[i]));
         
 
-        printf("\n");
-    } 
+    //     printf("\n");
+    // } 
     return 0;
 }
