@@ -13,7 +13,8 @@
         "1075.C": "cpp",
         "1180.C": "cpp",
         "1164.C": "cpp",
-        "STRING.C": "cpp"
+        "STRING.C": "cpp",
+        "iostream": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "cSpell.words": [

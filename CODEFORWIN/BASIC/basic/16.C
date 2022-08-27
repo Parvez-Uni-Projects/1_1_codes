@@ -11,6 +11,4 @@ int main()
     total=num1+num2+num3+num4+num5 ;//applying the formula
     avar =total/5;//applying the formula
      printf("The total number is %d \n The avarage number is %d",total,avar);
-
-
 }
