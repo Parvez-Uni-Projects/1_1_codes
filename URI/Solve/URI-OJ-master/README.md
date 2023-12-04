@@ -1,3 +1,0 @@
-My solutions to 1000+ problems from [URI Online Judge](https://www.urionlinejudge.com.br/judge/pt). The problems are organized in folders according to their ID in volumes of 100 problems each, and each problem has its own folder to contain the solutions in different programming languages. Solutions to problems removed from the site are available in the Deleted Problems folder.
-
-[My Profile](https://www.urionlinejudge.com.br/judge/pt/users/statistics/329514)
